@@ -1,0 +1,16 @@
+{
+  "name": "bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bank.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "monzo-api": "^1.0.9",
+    "monzo-js": "0.0.6"
+  }
+}
