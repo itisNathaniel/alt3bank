@@ -2,16 +2,23 @@
 var MonzoApi = require('monzo-api');
 var fs = require('fs');
 
-// import credentials
+// import credentials from file
 var userCreds = fs.readFileSync('credentials.txt').toString().split("\n");
-
 var clientId = userCreds[0];
-var clientSecret = userCreds[1]
+var clientSecret = userCreds[1];
 
 const monzoApi = new MonzoApi(clientId, clientSecret);
+
 nodeobject();
 
+// we use async as it very nicely waits for our API friend to get back to us
 async function nodeobject() {
 	var accountNames = await monzoApi.accounts([clientSecret]);
-	console.log(accountNames);
+
+	for (var account in accountNames.accounts)
+	{
+		console.log(accountNames.accounts[account].id);
+	}
+
+
 }
