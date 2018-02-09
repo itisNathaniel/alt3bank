@@ -13,3 +13,17 @@ If you're editing and don't fancy accidentally pushing your credentials to GitHu
 ```
 git update-index --assume-unchanged credentials.txt
 ```
+
+**Plans:**
+
+- [X] Interface with API using Monzo API
+
+- [ ] Create Web Interface using templates
+
+- [ ] Load transactions 
+
+- [ ] Rich icons for transactions
+
+- [ ] Lightbox for more transaction info
+
+- [ ] Use chart.js to plot spending habits
