@@ -11,5 +11,5 @@ auth key
 
 If you're editing and don't fancy accidentally pushing your credentials to GitHub, this will ignore any modifications to your file to stop you commiting it accidentally.
 ```
-git update-index --assume-unchanged FILE_NAME
+git update-index --assume-unchanged credentials.txt
 ```
