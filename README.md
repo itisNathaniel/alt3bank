@@ -18,7 +18,7 @@ git update-index --assume-unchanged credentials.txt
 
 - [X] Interface with API using Monzo API
 
-- [ ] Create Web Interface using templates
+- [ ] Create Web Interface using express and jinja 
 
 - [ ] Load transactions 
 
