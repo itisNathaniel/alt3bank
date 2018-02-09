@@ -20,6 +20,11 @@ async function nodeobject() {
 		var thisAccount = accountNames.accounts[account].id;
 		var accountBalance = await monzoApi.balance(thisAccount,[clientSecret]);
 		console.log(thisAccount + " balance: " + accountBalance.balance);
+		var transactionList = await monzoApi.transactions(thisAccount, [true], {}, [clientSecret]);
+		
+		// fetch our list of transactions
+		console.log(transactionList);
+
 	}
 
 
