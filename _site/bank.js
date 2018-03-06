@@ -3,10 +3,10 @@
 var MonzoApi = require('monzo-api');
 var fs = require('fs');
 var ejs = require('ejs');
-var express = require('express')
 // require and instantiate express
 const app = require('express')()
 var sleep = require('sleep');
+var jade = require('jade');
 
 // import credentials from file
 var monzoCreds = fs.readFileSync('credentials.txt').toString().split("\n");
@@ -39,16 +39,14 @@ async function monzoobject() {
 } */
 
 // set the view engine to ejs
-var path = require("path");
-app.use(express.static(path.join(__dirname, 'static')));
 app.set('view engine', 'ejs')
 
 // blog home page
 app.get('/', async (req, res) => {
   // render `home.ejs` with the list of posts
     var accounts = await getMonzoAccounts();
-    console.log(accounts);
-    res.render('home',{accounts:accounts});
+    jade.renderFile('index.jade', merge(options, locals));
+
 
   // res.render('home', { posts: transaction })
 })

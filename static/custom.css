@@ -1,0 +1,102 @@
+body {
+  font-family: roboto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.shopicon {
+    height: 40px;
+    width: 40px;
+    padding-right: 5px;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.shopname {
+  font-weight: 500;
+}
+
+.placename, .method {
+  font-weight: 300;
+  display: block;
+  font-size: 12px;
+}
+.purchasetype, .describe {
+  font-weight: 400;
+  display: block;
+  font-size: 13px;
+}
+.value {
+  font-weight: 400;
+  display: block;
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+
+.transactcontent {
+  text-align: left;
+}
+
+.paymentin .transactcontent .dateclr {
+  background-color: #20b72d !important;
+}
+
+.pot .transactcontent .dateclr {
+  background-color: #cea11b !important;
+}
+
+.paymentin {
+  background-color: #26d935 !important;
+}
+
+.pot {
+  background-color: #e4b21b !important;
+}
+
+.date {
+    width: 100%;
+    font-size: 14px;
+    padding: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dateclr {
+    background-color: #474a4c;
+}
+
+.transact .card {
+  width: 14rem;
+  margin: 2px 4px;
+}
+
+.card-100 {
+  width: 100%;
+}
+
+.headertitle {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.toprow .card {
+  margin: 5px;
+}
+
+.nameWeight {
+  font-weight: 400;
+}
+
+.btn_bottom {
+  bottom: 20px !important;
+  position: absolute;
+}
+
+.btnmoreinfotrans {
+  float: right;
+}
+/* /////////////////////// */
